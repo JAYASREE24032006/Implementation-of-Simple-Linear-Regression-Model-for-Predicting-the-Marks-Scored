@@ -10,25 +10,36 @@ To write a program to predict the marks scored by a student using the simple lin
 ## ALGORITHM:
 
 1.Import the standard Libraries.
+
 2.Set variables for assigning dataset values.
+
 3.Import linear regression from sklearn.
+
 4.Assign the points for representing in the graph.
+
 5.Predict the regression for marks by using the representation of the graph.
+
 6.Compare the graphs and hence we obtained the linear regression for the given datas.
 
 ## PROGRAM:
 
 ```
+/*
+Program to implement the simple linear regression model for predicting the marks scored.
+Developed by:JEYAARIKARAN P
+RegisterNumber: 212224240064
+*/
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.metrics import mean_absolute_error,mean_squared_error
-df=pd.read_csv('student_scores.csv')
-df.head()
+df=pd.read_csv("student_scores.csv")
+df.head(10)
 df.tail()
-x = df.iloc[:,:-1].values
+x=df.iloc[:,:-1].values
 x
-y = df.iloc[:,1].values
+y=df.iloc[:,1].values
 y
 from sklearn.model_selection import train_test_split
 x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=1/3,random_state=0)
@@ -38,15 +49,23 @@ regressor.fit(x_train,y_train)
 y_pred=regressor.predict(x_test)
 y_pred
 y_test
-mse=mean_absolute_error(y_test,y_pred)
+mse=mean_squared_error(y_test,y_pred)
 print('MSE = ',mse)
 mae=mean_absolute_error(y_test,y_pred)
 print('MAE = ',mae)
 rmse=np.sqrt(mse)
-print("RMSE= ",rmse)
-plt.scatter(x_train,y_train,color="orange")
-plt.plot(x_train,regressor.predict(x_train),color="red")
-plt.title("Hours vs Scores (Training set)")
+print('RMSE = ',rmse)
+##plotting for training data
+plt.scatter(x_train,y_train,color="blue")
+plt.plot(x_train,regressor.predict(x_train),color="green")
+plt.title("Hours vs Scores (Training Set)")
+plt.xlabel("Hours")
+plt.ylabel("Scores")
+plt.show()
+##plotting for test data
+plt.scatter(x_test,y_test,color="grey")
+plt.plot(x_test,y_pred,color="purple")
+plt.title("Hours vs Scores (Testing Set)")
 plt.xlabel("Hours")
 plt.ylabel("Scores")
 plt.show()
@@ -55,7 +74,28 @@ plt.show()
 
 
 ## OUTPUT:
-![image](https://github.com/user-attachments/assets/66ff3b11-61e0-4bf8-ae09-b02decb4ea01)
+![image](https://github.com/user-attachments/assets/61964e83-f07e-43c2-a6c6-03c40586e1c4)
+
+![image](https://github.com/user-attachments/assets/bf495320-cf3b-4a5f-87a1-981abfee4ef8)
+
+![image](https://github.com/user-attachments/assets/c19401b4-2e41-4176-9622-6b365cd58e50)
+
+![image](https://github.com/user-attachments/assets/93aacbc4-9c81-4f4a-a5bb-e9e930dbce1a)
+
+![image](https://github.com/user-attachments/assets/9b711dbf-3537-41b7-93a0-64b7067dff17)
+
+![image](https://github.com/user-attachments/assets/8191ca04-0d04-4950-ba4b-c2c66399c959)
+
+![image](https://github.com/user-attachments/assets/9c8aab62-cc2f-42ae-acc3-c67c53ef60e5)
+
+![image](https://github.com/user-attachments/assets/e656a1eb-6108-4a72-9a06-8123bc27a654)
+
+
+
+
+
+
+
 
 
 ## RESULT:
