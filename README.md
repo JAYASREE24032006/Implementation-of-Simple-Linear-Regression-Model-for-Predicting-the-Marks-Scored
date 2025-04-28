@@ -75,39 +75,39 @@ plt.show()
 
 ## OUTPUT:
 
-Head value:
+#### Head value:
 
 ![image](https://github.com/user-attachments/assets/61964e83-f07e-43c2-a6c6-03c40586e1c4)
 
-Tail Value:
+#### Tail Value:
 
 ![image](https://github.com/user-attachments/assets/bf495320-cf3b-4a5f-87a1-981abfee4ef8)
 
-Hours Value:
+#### Hours Value:
 
 ![image](https://github.com/user-attachments/assets/c19401b4-2e41-4176-9622-6b365cd58e50)
 
-Scores Value:
+#### Scores Value:
 
 ![image](https://github.com/user-attachments/assets/93aacbc4-9c81-4f4a-a5bb-e9e930dbce1a)
 
-Y_Prediction:
+#### Y_Prediction:
 
 ![image](https://github.com/user-attachments/assets/9b711dbf-3537-41b7-93a0-64b7067dff17)
 
-Y_Test:
+#### Y_Test:
 
 ![image](https://github.com/user-attachments/assets/ed2ed1ef-9dfa-4a96-bc7e-0f0414ee8cbf)
 
-Result of MSE,MAE,RMSE:
+#### Result of MSE,MAE,RMSE:
 
 ![image](https://github.com/user-attachments/assets/8191ca04-0d04-4950-ba4b-c2c66399c959)
 
-Training Set:
+#### Training Set:
 
 ![image](https://github.com/user-attachments/assets/9c8aab62-cc2f-42ae-acc3-c67c53ef60e5)
 
-Test Set:
+#### Test Set:
 
 ![image](https://github.com/user-attachments/assets/e656a1eb-6108-4a72-9a06-8123bc27a654)
 
