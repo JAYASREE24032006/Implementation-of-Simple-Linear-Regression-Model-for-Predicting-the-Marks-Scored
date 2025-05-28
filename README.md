@@ -24,7 +24,7 @@ To write a program to predict the marks scored by a student using the simple lin
 ## PROGRAM:
 
 ```
-Developed by: JAYASREE P
+Developed by: JAYASREE R
 RegisterNumber: 212223040074
 ```
 ```
